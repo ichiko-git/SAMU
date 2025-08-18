@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+:root {
+  /* カラー定義 */
+  --accent-color: #500e00;
+  --accent-color2: #d30000;
+  --font-color: #8d5e2e;
+  --bace-color: #fffff7;
+  --main-color: #d7c6b6;
+
+  /* フォント定義 */
+  --font-family-noto: "Noto Sans JP", sans-serif;
+  --font-family-zenoldmincho: "Zen Old Mincho", serif;
+  --font-family-arial: "Arial", sans-serif;
+  --font-family-playfairdisplay: "Playfair Display", serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+html {
+  /* スムーススクロール */
+  scroll-behavior: smooth;
+}
+body {
+  font-family: var(--font-family-noto);
+  font-weight: 400; /* Regular */
+  color: var(--accent-color);
+  font-size: 16px;
+}

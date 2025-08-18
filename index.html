@@ -12,11 +12,15 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
     />
     <!-- 自作CSS -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <!-- ヘッダー -->
     <header class="header">
-      <h1>SAMU</h1>
+      <h1>
+        <a href="#"><img src="image/SAMU_logo.svg" alt="SAMU_logo" /></a>
+      </h1>
+      <!-- ハンバーガーメニュー -->
       <div class="hamburgermenu">
         <span></span>
         <span></span>
@@ -24,6 +28,7 @@
       </div>
     </header>
     <main class="main">
+      <!-- ファーストビュー -->
       <section class="fv">
         <p class="fv__catchcopy">
           オーガニック素材100%で<br />
@@ -31,6 +36,7 @@
           スキンケアブランドnora誕生
         </p>
       </section>
+      <!-- About -->
       <section class="about">
         <div class="section_title">
           <h2 class="section_title__title">
@@ -60,6 +66,7 @@
           </div>
         </div>
       </section>
+      <!-- Products -->
       <section class="products">
         <div class="section_title">
           <h2 class="section_title__title">
@@ -112,6 +119,7 @@
           </div>
         </div>
       </section>
+      <!-- How to use -->
       <section class="howtouse">
         <div class="section_title">
           <h2 class="section_title__title">
@@ -167,6 +175,7 @@
           </div>
         </div>
       </section>
+      <!-- Special Offer -->
       <section class="specialoffer">
         <div class="section_title">
           <h2 class="section_title__title">
@@ -206,6 +215,38 @@
         <div class="button specialoffer__button">初回限定セットを購入する</div>
       </section>
     </main>
-    <footer class="footer"></footer>
+    <!-- フッター -->
+    <footer class="footer">
+      <div class="footer__logosns">
+        <h1 class="footer__logo">
+          <a href="#"><img src="image/SAMU_logo.svg" alt="SAMU_logo" /></a>
+        </h1>
+        <div class="footer__sns">
+          <a href="#"
+            ><img src="image/instagram_icon.png" alt="instagram_icon"
+          /></a>
+          <a href="#"
+            ><img src="image/facebook_icon.png" alt="facebook_icon"
+          /></a>
+          <a href="#"><img src="image/x_icon.png" alt="x_icon" /></a>
+        </div>
+      </div>
+      <nav class="footer__nav">
+        <ul class="footer__list">
+          <li><a href="#">Privacy poricy</a></li>
+          <li><a href="#">Terms of Use</a></li>
+          <li><a href="#">Company</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="footer__copyright">
+        <small>&copy;SAMU COSMETICS all rights reserved.</small>
+      </div>
+    </footer>
+    <!-- トップへ戻るボタン -->
+    <div class="pagetop">
+      <div class="pagetop__arrow"></div>
+      <div class="pagetop__text">Page Top</div>
+    </div>
   </body>
 </html>
