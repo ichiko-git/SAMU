@@ -27,4 +27,38 @@ body {
   font-weight: 400; /* Regular */
   color: var(--accent-color);
   font-size: 16px;
+  width: 100%;
+}
+h1 {
+  margin: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+/* ヘッダー */
+.header {
+  background-color: var(--main-color);
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  width: 100%;
+  padding: 0 10px;
+  align-items: center;
+}
+.hamburgermenu {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.hamburgermenu span {
+  display: block;
+  background-color: var(--bace-color);
+  width: 37.5px;
+  height: 5px;
 }
