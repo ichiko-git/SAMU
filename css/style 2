@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+:root {
+  /* カラー定義 */
+  --accent-color: #500e00;
+  --accent-color2: #d30000;
+  --font-color: #8d5e2e;
+  --bace-color: #fffff7;
+  --main-color: #d7c6b6;
+
+  /* フォント定義 */
+  --font-family-noto: "Noto Sans JP", sans-serif;
+  --font-family-zenoldmincho: "Zen Old Mincho", serif;
+  --font-family-arial: "Arial", sans-serif;
+  --font-family-playfairdisplay: "Playfair Display", serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+html {
+  /* スムーススクロール */
+  scroll-behavior: smooth;
+}
+body {
+  font-family: var(--font-family-noto);
+  font-weight: 400; /* Regular */
+  color: var(--accent-color);
+  font-size: 16px;
+  width: 100%;
+}
+h1,
+h2 {
+  margin: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* ヘッダー */
+.header {
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  width: 100%;
+  padding: 0 10px;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+.hamburgermenu {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.hamburgermenu span {
+  display: block;
+  background-color: var(--bace-color);
+  width: 37.5px;
+  height: 5px;
+}
+/* ファーストビュー */
+.fv {
+  width: 100%;
+  height: 550px;
+  background-image: url(/image/FV.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 72px 20px;
+}
+.fv__catchcopy {
+  font-family: var(--font-family-zenoldmincho);
+  font-size: 24px;
+  line-height: 48px;
+}
+.fv__catchcopy span {
+  font-family: var(--font-family-playfairdisplay);
+  font-size: 32px;
+  font-weight: 700;
+}
+/* About */
+.about {
+  width: 100%;
+  height: auto;
+  background-color: var(--bace-color);
+}
+.section_title {
+  padding: 50px 0 20px 0;
+  text-align: center;
+}
+.section_title__title .en {
+  display: block;
+  font-family: var(--font-family-playfairdisplay);
+  font-weight: 400;
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+.section_title__title .ja {
+  display: block;
+  font-family: var(--font-family-zenoldmincho);
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.14em;
+}
+.about__content {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.about__text {
+  line-height: 36px;
+  letter-spacing: 0.012em;
+}
+.about__image {
+  width: 100%;
+  height: auto;
+  display: flex;
+  margin-bottom: 80px;
+}
+.about__imageleft,
+.about__imageright {
+  width: 50%;
+  height: auto;
+}
