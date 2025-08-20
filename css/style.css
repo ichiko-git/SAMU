@@ -188,3 +188,71 @@ img {
   width: 100%;
   height: 245px;
 }
+/* How to use */
+.howtouse {
+  background-color: var(--main-color);
+  padding: 0 30px 50px 30px;
+}
+.howtouse__content {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.howtouse__item::after {
+  display: block;
+  content: "";
+  margin: 0 auto;
+  width: 50px;
+  height: 50px;
+  border-left: solid 1.6px var(--bace-color);
+  border-bottom: solid 1.6px var(--bace-color);
+  rotate: -45deg;
+  margin-top: 30px;
+}
+.howtouse__item:last-child::after {
+  display: none;
+}
+.howtouse__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 10px;
+}
+.howtouse__step {
+  font-family: var(--font-family-playfairdisplay);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.29em;
+  color: #ffffff;
+  text-align: center;
+  width: 50px;
+}
+.howtouse__label {
+  display: block;
+  line-height: 14px;
+}
+.howtouse__num {
+  display: block;
+  font-size: 36px;
+}
+.howtouse__label::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 1.6px;
+  background-color: #ffffff;
+  margin-top: 10px;
+}
+.howtouse__title {
+  font-family: var(--font-family-zenoldmincho);
+  font-weight: 500;
+  font-size: 30px;
+}
+.howtouse__desc {
+  margin-top: 10px;
+  text-align: center;
+}
+.howtouse__text {
+  font-weight: 500;
+  line-height: 26px;
+}
