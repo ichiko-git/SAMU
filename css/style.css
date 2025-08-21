@@ -174,8 +174,6 @@ a {
   flex-direction: column;
   gap: 10px;
 }
-.products__desc {
-}
 .products__category {
   display: inline-block;
   width: auto;
@@ -489,6 +487,8 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  /* 表示/非表示のアニメーション用 */
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
 }
 .pagetop__text::before {
   content: "";
@@ -503,4 +503,17 @@ a {
 .pagetop__text {
   font-family: var(--font-family-playfairdisplay);
   font-size: 14px;
+}
+/* トップへ戻るボタン 表示/非表示制御用クラス */
+.pagetop.pagetop--hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateY(10px);
+}
+.pagetop.pagetop--visible {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateY(0);
 }
