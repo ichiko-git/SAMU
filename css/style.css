@@ -18,13 +18,9 @@
 * {
   box-sizing: border-box;
 }
-html {
-  /* スムーススクロール */
-  scroll-behavior: smooth;
-}
 body {
   font-family: var(--font-family-noto);
-  font-weight: 400; /* Regular */
+  font-weight: 400;
   color: var(--accent-color);
   font-size: 16px;
   width: 100%;
@@ -104,7 +100,17 @@ ul {
   width: 100%;
   height: auto;
   background-color: #ffffff;
+  transform: translateY(-100%);
+  transition: transform 0.3s ease;
 }
+/* ドロワーメニュー 表示/非表示制御用クラス */
+.drowermenu.drowermenu--hidden {
+  transform: translateY(-100%);
+}
+.drowermenu.drowermenu--visible {
+  transform: translateY(0);
+}
+
 .drowermenu__header {
   width: 100%;
   height: 50px;
