@@ -714,6 +714,7 @@ ul {
     grid-template-areas: "imageleft textarea imageright";
     padding-top: 20px;
     padding-bottom: 100px;
+    gap: 10px;
   }
   .about__text {
     font-size: 24px;
@@ -721,12 +722,12 @@ ul {
     letter-spacing: 0.012em;
   }
   .about__imageleft {
-    max-height: 400px;
+    height: 400px;
     padding-bottom: 0;
     align-self: self-end;
   }
   .about__imageright {
-    max-height: 500px;
+    height: 500px;
     padding-top: 0;
     align-self: self-start;
   }
