@@ -189,7 +189,7 @@ ul {
 .fv {
   width: 100%;
   height: 550px;
-  background-image: url(/image/FV.png);
+  background-image: url(../image/FV.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -506,7 +506,7 @@ ul {
 }
 .specialoffer__afterprice::before {
   display: inline-block;
-  content: url(/image/arrow.png);
+  content: url(../image/arrow.png);
   margin-right: 10px;
 }
 .specialoffer__button {
@@ -679,7 +679,7 @@ ul {
   /* ファーストビュー */
   .fv {
     height: 700px;
-    background-image: url(/image/FV-PC.png);
+    background-image: url(../image/FV-PC.png);
     padding: 0;
   }
   .fv__catchcopy {
